@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/view/screen/mianSc.dart';
 import 'package:flutter_application_1/view/screen/search.dart';
 
 import 'view/screen/authSc.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: MyHomePage(),
+      home: MainSc(),
       //EditScreen(email: 'email', geneder: 'geneder', id: 'id', name: 'name', level: 3, password: 'password', img: null),
       routes: {
         SearchPage.routeName: (context) => const SearchPage(),

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/controller/authCtr.dart';
+import 'package:flutter_application_1/view/screen/mianSc.dart';
+import 'package:flutter_application_1/view/screen/search.dart';
 import 'package:flutter_application_1/view/widget/dialog.dart';
 import 'package:flutter_application_1/view/widget/editField.dart';
 import 'package:flutter_application_1/view/widget/signin_button.dart';
@@ -147,6 +149,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         else
                         {
                            MyDialog('signin successfully', context, Colors.green);
+
+                           Navigator.of(context).push(MaterialPageRoute(builder: (context) =>MainSc() ,));
                         }
                       },
                     )

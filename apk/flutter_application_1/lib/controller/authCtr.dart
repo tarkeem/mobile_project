@@ -10,7 +10,7 @@ class authCtr
 
    Future<int> signin(email,pass)async
   {
-         var res=await http.post(Uri.parse('http://localhost:4000/api/auth/login'),body:{
+         var res=await http.post(Uri.parse('http://10.0.2.2:4000/api/auth/login'),body:{
     "email": email,
     "password": pass
       });
@@ -21,7 +21,7 @@ class authCtr
  Future<int> signup(name,email,pass,gender,level)async
   {
 
-      var res=await http.post(Uri.parse('http://localhost:4000/api/auth/register'),body:{
+      var res=await http.post(Uri.parse('http://10.0.2.2:4000/api/auth/register'),body:{
     "username": 'name',
     "email": email,
     "password": pass,
